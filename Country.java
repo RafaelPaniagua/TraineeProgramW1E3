@@ -1,6 +1,6 @@
-public class Country {
+public class Country implements  Comparable<Country>{
 
-    private String name ;
+    private String name  ;
     private String isocode;
 
 
@@ -33,5 +33,11 @@ public class Country {
         return "Country{" +
                 "name='" + name + '\'' +
                 '}';
+    }
+
+
+    @Override
+    public int compareTo(Country o) {
+        return 0;
     }
 }

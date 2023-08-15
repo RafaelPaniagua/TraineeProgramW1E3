@@ -1,18 +1,21 @@
-public class Product {
+import java.lang.reflect.Field;
+import java.util.Collection;
 
-   private String name ;
-   private int Stock;
+public  class  Product implements Comparable<Product>  {
 
+
+    private  String name ;
+   private int stock;
 
     public Product() {
     }
 
     public Product(String name, int stock) {
         this.name = name;
-        Stock = stock;
+        this.stock = stock;
     }
 
-    public String getName() {
+    public  String getName() {
         return name;
     }
 
@@ -20,18 +23,29 @@ public class Product {
         this.name = name;
     }
 
+    public void setStock(int stock) {
+        this.stock = stock;
+    }
+
     public int getStock() {
-        return Stock;
+        return stock;
+    }
+
+    public void updateStock(int value){
+        int newValue ;
+        newValue = this.getStock() + value;
+        this.setStock(newValue);
+    }
+
+    @Override
+    public int compareTo(Product p) {
+      //  this.name.compareTo(p.name);
+        return 0;
     }
 
     @Override
     public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                '}';
+        return super.toString();
     }
 
-    public void setStock(int stock) {
-        Stock = stock;
-    }
 }
