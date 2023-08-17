@@ -13,9 +13,9 @@ public class Menu {
         menu += "REPOSITORIO" + "\n";
         menu += "Menú Principal                       " + "\n";
         menu += "Seleccione la opción que desea realizar:" + "\n";
-        menu += "1- Administracion de Usuarios" + "\n";
-        menu += "2- Administracion de Paises" + "\n";
-        menu += "3- Administracion de Productos" + "\n";
+        menu += "1- Administración de Usuarios" + "\n";
+        menu += "2- Administración de Paises" + "\n";
+        menu += "3- Administración de Productos" + "\n";
         menu += "4- Salir" + "\n";
 
         return menu;
@@ -88,9 +88,9 @@ public  int getMenuMain(){
     menu += "REPOSITORIO" + "\n";
     menu += "Menú Principal                       " + "\n";
     menu += "Seleccione la opción que desea realizar:" + "\n";
-    menu += "1- Administracion de Usuarios" + "\n";
-    menu += "2- Administracion de Paises" + "\n";
-    menu += "3- Administracion de Productos" + "\n";
+    menu += "1- Administración de Usuarios" + "\n";
+    menu += "2- Administración de Paises" + "\n";
+    menu += "3- Administración de Productos" + "\n";
     menu += "4- Salir" + "\n";
 
 

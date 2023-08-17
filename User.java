@@ -43,8 +43,6 @@ public class User implements Comparable<User> {
         this.lastName = lastName;
     }
 
-
-
     public void addEmail(String email) {
         emailSet.add(email);
     }

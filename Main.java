@@ -30,7 +30,7 @@ public class Main {
 
                 switch (choice) {
 
-                    //Opción 1: Muestra el Mnuú para administrar los usuarios.
+                    //Opción 1: Muestra el Menú para administrar los usuarios.
 
                     case 1:
                         do {

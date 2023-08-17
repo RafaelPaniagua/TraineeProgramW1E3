@@ -55,7 +55,6 @@ public class Repository<T> implements OperationsRepository {
     }
 
     public void updateStockByProductName(Product product, int addStock) {
-
         product.updateStock(addStock);
         JFrame jframeUpdateProduct = new JFrame();
         JOptionPane.showMessageDialog(jframeUpdateProduct, "Producto ya existente. El stock se ha actualizado con exito");

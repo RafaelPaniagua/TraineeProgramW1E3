@@ -2,9 +2,6 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 public interface OperationsRepository<T> {
-
-
-
     public void save(T objeto,String type);
 
     public int  count();

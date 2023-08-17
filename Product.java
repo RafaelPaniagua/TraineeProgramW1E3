@@ -3,7 +3,6 @@ import java.util.Collection;
 
 public  class  Product implements Comparable<Product>  {
 
-
     private  String name ;
    private int stock;
 

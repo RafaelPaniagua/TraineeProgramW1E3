@@ -1,6 +1,6 @@
 public class Country implements  Comparable<Country>{
 
-    private String name  ;
+    private String name;
     private String isocode;
 
 
