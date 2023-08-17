@@ -20,22 +20,26 @@ public class Repository<T> implements OperationsRepository {
     public void save(Object obj, String type) {
         T objeto = (T) obj;
 
-        int addStock = ((Product) objeto).getStock();
-
 
         try {
+
             if (this.validateTypeElement(objeto, type)) {
+                if (type.equals("Product") ){
+                    int addStock = ((Product) objeto).getStock();
+                    Optional<Product> optionalProduct = findByProductName((Product) objeto);
 
-                Optional<Product> optionalProduct = findByProductName((Product) objeto);
-
-                if (optionalProduct.isEmpty()) {
+                    if (optionalProduct.isEmpty()) {
+                        lista.add(objeto);
+                        JFrame jFrame = new JFrame();
+                        JOptionPane.showMessageDialog(jFrame, "Registro almacenado con exito");
+                    } else {
+                        updateStockByProductName(optionalProduct.get(), addStock);
+                    }
+                }
+                else{
                     lista.add(objeto);
                     JFrame jFrame = new JFrame();
                     JOptionPane.showMessageDialog(jFrame, "Registro almacenado con exito");
-                } else {
-
-                    updateStockByProductName(optionalProduct.get(), addStock);
-
                 }
 
 
